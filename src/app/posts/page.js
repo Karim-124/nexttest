@@ -2,7 +2,7 @@ import React from 'react'
 
 function PostPage() {
   return (
-    <div>page</div>
+    <div>This is the post page </div>
   )
 }
 
