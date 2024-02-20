@@ -1,8 +1,16 @@
 import React from 'react'
 
-function PostPage() {
+async function PostPage() {
+ const response=await fetch('https://jsonplaceholder.typicode.com/todos/1')
+  const todo =await response.json()
+
   return (
-    <div>This is the post page </div>
+    <div>
+      <h1>This is the post page</h1>
+      <h1>{todo.title}</h1>
+
+    </div>
+    
   )
 }
 
